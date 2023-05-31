@@ -13,11 +13,20 @@ global_response = None
 
 def palm_chatbot(your_question):
     global global_response
-    if global_response is None:
-        global_response = palm.chat(messages=your_question)
-    else:
-        global_response = global_response.reply(your_question)
-    return global_response.last
+    if not your_question:
+        return "Please provide a question."
+    try:
+        if global_response is None:
+            global_response = palm.chat(messages=your_question)
+        else:
+            global_response = global_response.reply(your_question)
+        if not global_response.last:
+            return "I'm sorry, I don't have a response for that."
+        return global_response.last
+    except ValueError:
+        return "I'm sorry, I wasn't able to generate a response."
+    except Exception as e:
+        return f"{str(e)}"
 
 
 iface = gr.Interface(fn=palm_chatbot, inputs="text", outputs="text")
