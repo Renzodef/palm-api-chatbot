@@ -25,7 +25,7 @@
 
 ## 📍 Overview
 
-The palm-api-chatbot project is a Python application that provides a chatbot interface for interacting with the [Google PaLM API](https://developers.generativeai.google/).
+The palm-api-chatbot project is a Python application that provides a chatbot interface for interacting with the [Google PaLM APIs](https://developers.generativeai.google/).
 
 ---
 
