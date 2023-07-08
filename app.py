@@ -1,8 +1,8 @@
 import os
 
+from dotenv_vault import load_dotenv
 import google.generativeai as palm
 import gradio as gr
-from dotenv import load_dotenv
 
 load_dotenv()
 palm_api_key = os.getenv("PALM_API_KEY")

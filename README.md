@@ -23,8 +23,7 @@ The project is a simple Python application that provides a [Gradio](https://www.
 ### ✔️ Prerequisites
 
 Before you begin, ensure that you have the following prerequisites installed:
-- [Python](https://www.python.org/)
-- [pip](https://pip.pypa.io/)
+- [Pyenv](https://github.com/pyenv/pyenv)
 - A valid PaLM API key
 
 Also, you need to be located in the USA (The API key won't work otherwise).
@@ -41,22 +40,37 @@ Also, you need to be located in the USA (The API key won't work otherwise).
    cd palm-api-gradio
    ```
 
-3. Install the dependencies (it is advised to use a virtual environment management tool like [Virtualenv](https://virtualenv.pypa.io/)):
+3. Copy the `.env.example` to `.env` and set your `PALM_API_KEY`
+
+4. Install Python through Pyenv:
    ```sh
-   pip install -r requirements.txt
+   pyenv install 3.10.0
    ```
 
-4. Copy the `.env.example` to `.env` and set your `PALM_API_KEY`
+5. Set the local Python version for the project:
+   ```sh
+   pyenv local 3.10.0
+   ```
+
+6. Install Pipenv:
+   ```sh
+   pip install pipenv
+   ```
+
+7. Install the dependencies:
+   ```sh
+   pipenv install
+   ```
 
 ### 🎮 Using palm-api-gradio
 
 To start the server, run the following command:
 
 ```sh
-python app.py
+pipenv run python app.py
 ```
 
-Once the server is running, open your preferred web browser and enter the following URL: http://localhost:78604.
+Once the server is running, open your preferred web browser and enter the following URL: [http://localhost:78604](http://localhost:78604).
 
 In the Gradio interface, you can enter your questions or messages in the provided input field, then the application will process your input and generate responses based on the PaLM model.
 

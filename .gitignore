@@ -58,18 +58,14 @@ local.properties
 ################
 *.sublime-workspace
 
-# Gradio #
-################
-flagged/
-
-# Virtualenv #
-################
-env/
-
 # Dotenv #
 ################
 .env
 
-# Python #
+# Pyenv #
 ################
-__pycache__/
+.python-version
+
+# Gradio #
+################
+flagged/
