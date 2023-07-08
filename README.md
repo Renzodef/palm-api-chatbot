@@ -14,7 +14,7 @@
 
 ## 📍 Overview
 
-The palm-api-gradio project is a Python application that provides a [Gradio](https://www.gradio.app/) interface for interacting with the [Google PaLM APIs](https://developers.generativeai.google/).
+The palm-api-gradio project is a simple Python application that provides a [Gradio](https://www.gradio.app/) interface for interacting with the [Google PaLM APIs](https://developers.generativeai.google/).
 
 ---
 
