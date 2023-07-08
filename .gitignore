@@ -62,10 +62,6 @@ local.properties
 ################
 .env
 
-# Pyenv #
-################
-.python-version
-
 # Gradio #
 ################
 flagged/
