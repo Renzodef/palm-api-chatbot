@@ -24,6 +24,7 @@ The project is a simple Python application that provides a [Gradio](https://www.
 
 Before you begin, ensure that you have the following prerequisites installed:
 - [Pyenv](https://github.com/pyenv/pyenv)
+- [Pipenv](https://pipenv.pypa.io/en/latest/)
 - A valid PaLM API key
 
 Also, you need to be located in the USA (The API key won't work otherwise).
@@ -42,22 +43,12 @@ Also, you need to be located in the USA (The API key won't work otherwise).
 
 3. Copy the `.env.example` to `.env` and set your `PALM_API_KEY`
 
-4. Install Python through Pyenv:
+4. Install Python 3.10 through Pyenv (this just need to be installed in the system, setting Python 3.10 as global or local version is not required):
    ```sh
-   pyenv install 3.10.0
+   pyenv install 3.10
    ```
 
-5. Set the local Python version for the project:
-   ```sh
-   pyenv local 3.10.0
-   ```
-
-6. Install Pipenv:
-   ```sh
-   pip install pipenv
-   ```
-
-7. Install the dependencies:
+5. Install the dependencies through Pipenv (a virtual environment using Pyhon 3.10 as base will be created even if your current global or local version in use is different):
    ```sh
    pipenv install
    ```
