@@ -14,7 +14,7 @@
 
 ## 📍 Overview
 
-The palm-api-gradio project is a simple Python application that provides a [Gradio](https://www.gradio.app/) interface for interacting with the [Google PaLM APIs](https://developers.generativeai.google/).
+The project is a simple Python application that provides a [Gradio](https://www.gradio.app/) interface for interacting with the [Google PaLM APIs](https://developers.generativeai.google/).
 
 ---
 
@@ -55,6 +55,7 @@ To start the server, run the following command:
 ```sh
 python app.py
 ```
+
 Once the server is running, open your preferred web browser and enter the following URL: http://localhost:78604.
 
 In the Gradio interface, you can enter your questions or messages in the provided input field, then the application will process your input and generate responses based on the PaLM model.
